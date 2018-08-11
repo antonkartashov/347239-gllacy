@@ -2,13 +2,13 @@
 <html lang='ru'>
     <head>
         <meta charset='utf-8'>
-        <title>HTML Academy: Глейси</title>
+        <title>Магазин мороженного «Глейси»</title>
     </head>
     <body>
         <header class='main-header'>
             <nav class='main-navigation'>
                 <a href='index.html' class='main-header-logo'>
-                    <img src='img/logo1.svg' width='154' height='64' alt='Магазин мороженного «Глейси»'>
+                    <img src='http://placehold.it/154x64' width='154' height='64' alt='Магазин мороженного «Глейси»'>
                 </a>
                 <ul class='site-navigation'>
                     <li><a href='catalog.html'>Каталог</a></li>
@@ -18,7 +18,7 @@
                 <ul class='user-navigation'>
                     <li><a class='search-button' href='#'>Поиск</a></li>
                     <li><a class='login-button' href='#'>Вход</a></li>
-                    <li><a class='cart-button' href='#'>Корзина: <span class='cart-button-statu'>Пусто</span></a></li>
+                    <li><a class='cart-button' href='#'>Корзина: <span class='cart-button-status'>Пусто</span></a></li>
                 </ul>
                 <p class='main-header-contacts'>
                     С&nbsp;10 до&nbsp;20 ежедневно<br>
@@ -90,6 +90,7 @@
                             <b>310 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
+                        <span class='button visually-hidden'>Быстрый просмотр</span>
                     </li>
                     <li class='catalog-item'>
                         <h3 class='catalog-item-title'><a href='catalog/2'>Сливочно-кофейное с&nbsp;кусочками шоколада</a></h3>
@@ -101,6 +102,7 @@
                             <b>380 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
+                        <span class='button visually-hidden'>Быстрый просмотр</span>
                     </li>
                     <li class='catalog-item'>
                         <h3 class='catalog-item-title'><a href='catalog/3'>Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</a></h3>
@@ -112,6 +114,7 @@
                             <b>355 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
+                        <span class='button visually-hidden'>Быстрый просмотр</span>
                     </li>
                     <li class='catalog-item'>
                         <h3 class='catalog-item-title'><a href='catalog/4'>Сливочное крем-брюле с&nbsp;карамельной подливкой</a></h3>
@@ -123,6 +126,7 @@
                             <b>415 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
+                        <span class='button visually-hidden'>Быстрый просмотр</span>
                     </li>
                 </ul>
             </section>
@@ -194,7 +198,14 @@
                 Сделано в <a href='https://htmlacademy.ru/'>HTML Academy</a> ©&nbsp;2018</p>
         </footer>
 
-        <section class="modal modal-menu">
+        <section class='modal modal-feedback'>
+            <h2>Мы обязательно вам ответим!</h2>
+            <!-- Форма -->
+            <span class='button'>Отправить</span>
+            <span class='modal-close'>×</span>
+        </section>
+
+        <section class='modal modal-menu'>
             <h2 class='visually-hidden'>Главное меню</h2>
             <ul class='category-list'>
                 <li class='category-item category-item-marked'><a href='new-items.html'>Новинки</a></li>
@@ -205,20 +216,19 @@
             </ul>
         </section>
 
-        <section class="modal modal-signin">
-            <h2 class='visually-hidden'>Вход</h2>
-            <!-- Форма -->
-        </section>
-
-        <section class="modal modal-search">
+        <section class='modal modal-search'>
             <h2 class='visually-hidden'>Поиск</h2>
             <!-- Форма -->
         </section>
 
-        <section class="modal modal-feedback">
-            <h2>Мы обязательно вам ответим!</h2>
+        <section class='modal modal-signin'>
+            <h2 class='visually-hidden'>Вход</h2>
             <!-- Форма -->
-            <span class="modal-close">×</span>
+            <span class='button'>Войти</span>
+            <ul class='modal-signin-links'>
+                <li class='modal-signin-link'><a href='#'>Забыли пароль?</a></li>
+                <li class='modal-signin-link'><a href='#'>Новая регистрация</a></li>
+            </ul>
         </section>
     </body>
 </html>
