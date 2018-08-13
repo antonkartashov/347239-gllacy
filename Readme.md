@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Антон Карташов](https://up.htmlacademy.ru/htmlcss/22/user/347239).
-* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
+* Наставник: [Мурат Баркинхоев](https://htmlacademy.ru/profile/id186857).
 
 ---
 
