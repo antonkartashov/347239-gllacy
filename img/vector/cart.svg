@@ -1,0 +1,8 @@
+<svg viewBox='0 0 24 24' width='24px' height='24px' xmlns='http://www.w3.org/2000/svg'>
+    <polygon id='cart-fill' fill='#e84d37' points='6.888 6.031 7.922 15 18.372 15 19.548 6.031'></polygon>
+    <g id='cart-border' fill='#343434'>
+        <path d='M6.657,4.031 L6.422,2 L1,2 L1,4 L4.64,4 L6.14,17 L20.128,17 L21.827,4.031 L6.657,4.031 Z M18.372,15 L7.922,15 L6.888,6.031 L19.548,6.031 L18.372,15 Z'></path>
+        <circle cx='7.984' cy='20' r='2'></circle>
+        <circle cx='16.984' cy='20' r='2'></circle>
+    </g>
+</svg>
