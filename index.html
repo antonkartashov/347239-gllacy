@@ -27,9 +27,38 @@
                     <li><a href='company.html'>О&nbsp;компании</a></li>
                 </ul>
                 <ul class='user-navigation'>
-                    <li><button type='button' class='button button-search'>Поиск</button></li>
-                    <li><button type='button' class='button button-signin'>Вход</button></li>
-                    <li><button type='button' class='button button-cart'>2&nbsp;товара</button></li>
+                    <li>
+                        <button type='button' class='button button-search'>Поиск</button>
+                        <section class='dropdown dropdown-search'>
+                            <h2 class='visually-hidden'>Поиск</h2>
+                            <form action='https://echo.htmlacademy.ru' method='get'>
+                                <label class='visually-hidden' for='dropdown-search-field'>Поиск по&nbsp;сайту</label>
+                                <input type='search' class='search-field' id='dropdown-search-field' name='dropdown-search-field' placeholder='Что ищем?'>
+                            </form>
+                        </section>
+                    </li>
+                    <li>
+                        <button type='button' class='button button-signin'>Вход</button>
+                        <section class='dropdown dropdown-signin'>
+                            <h2 class='visually-hidden'>Вход</h2>
+                            <form action='https://echo.htmlacademy.ru' method='post'>
+                                <p>
+                                    <label class='visually-hidden' for='dropdown-signin-email'>Электронная почта</label>
+                                    <input type='email' class='signin-email' id='dropdown-signin-email' name='dropdown-signin-email' placeholder='Электронная почта'>
+                                </p>
+                                <p>
+                                    <label class='visually-hidden' for='dropdown-signin-password'>Пароль</label>
+                                    <input type='password' class='signin-password' id='dropdown-signin-password' name='dropdown-signin-password' placeholder='Пароль'>
+                                </p>
+                                <ul class='signin-links'>
+                                    <li><a href='#'>Забыли пароль?</a></li>
+                                    <li><a href='#'>Новая регистрация</a></li>
+                                </ul>
+                                <button class='button button-small' type='submit'>Войти</button>
+                            </form>
+                        </section>
+                    </li>
+                    <li><button type='button' class='button button-cart'>Пусто</button></li>
                 </ul>
                 <p class='main-header-contacts'>
                     С&nbsp;10 до&nbsp;20 ежедневно<br>
@@ -209,51 +238,24 @@
                 Сделано в&nbsp;<a href='https://htmlacademy.ru/intensive/htmlcss'>HTML Academy</a> ©&nbsp;2018</p>
         </footer>
 
-        <section class='dropdown dropdown-feedback'>
+        <section class='moadl modal-feedback'>
             <h2>Мы обязательно вам ответим!</h2>
             <form action='https://echo.htmlacademy.ru' method='get'>
                 <p>
-                    <label class='visually-hidden' for='dropdown-feedback-name'>Имя и фамилия</label>
-                    <input type='text' class='feedback-name' id='dropdown-feedback-name' name='dropdown-feedback-name' placeholder='Как вас зовут?'>
+                    <label class='visually-hidden' for='modal-feedback-name'>Имя и фамилия</label>
+                    <input type='text' class='feedback-name' id='modal-feedback-name' name='modal-feedback-name' placeholder='Как вас зовут?'>
                 </p>
                 <p>
-                    <label class='visually-hidden' for='dropdown-feedback-email'>Электронная почта</label>
-                    <input type='email' class='feedback-email' id='dropdown-feedback-email' name='dropdown-feedback-email' placeholder='Ваша почта для ответа'>
+                    <label class='visually-hidden' for='modal-feedback-email'>Электронная почта</label>
+                    <input type='email' class='feedback-email' id='modal-feedback-email' name='modal-feedback-email' placeholder='Ваша почта для ответа'>
                 </p>
                 <p>
-                    <label class='visually-hidden' for='dropdown-feedback-message'>Ваши замечания и предложения</label>
-                    <textarea class='feedback-message' id='dropdown-feedback-message' name='dropdown-feedback-message' placeholder='Напишите что-нибудь…' rows='7'></textarea>
+                    <label class='visually-hidden' for='modal-feedback-message'>Ваши замечания и предложения</label>
+                    <textarea class='feedback-message' id='modal-feedback-message' name='modal-feedback-message' placeholder='Напишите что-нибудь…' rows='7'></textarea>
                 </p>
                 <button class='button button-small' type='submit'>Отправить</button>
             </form>
             <button type='button' class='cross-big'>Закрыть</button>
-        </section>
-
-        <section class='dropdown dropdown-search'>
-            <h2 class='visually-hidden'>Поиск</h2>
-            <form action='https://echo.htmlacademy.ru' method='get'>
-                <label class='visually-hidden' for='dropdown-search-field'>Поиск по&nbsp;сайту</label>
-                <input type='search' class='search-field' id='dropdown-search-field' name='dropdown-search-field' placeholder='Что ищем?'>
-            </form>
-        </section>
-
-        <section class='dropdown dropdown-signin'>
-            <h2 class='visually-hidden'>Вход</h2>
-            <form action='https://echo.htmlacademy.ru' method='post'>
-                <p>
-                    <label class='visually-hidden' for='dropdown-signin-email'>Электронная почта</label>
-                    <input type='email' class='signin-email' id='dropdown-signin-email' name='dropdown-signin-email' placeholder='Электронная почта'>
-                </p>
-                <p>
-                    <label class='visually-hidden' for='dropdown-signin-password'>Пароль</label>
-                    <input type='password' class='signin-password' id='dropdown-signin-password' name='dropdown-signin-password' placeholder='Пароль'>
-                </p>
-                <ul class='signin-links'>
-                    <li><a href='#'>Забыли пароль?</a></li>
-                    <li><a href='#'>Новая регистрация</a></li>
-                </ul>
-                <button class='button button-small' type='submit'>Войти</button>
-            </form>
         </section>
     </body>
 </html>
