@@ -3,7 +3,7 @@
 * Студент: [Антон Карташов](https://up.htmlacademy.ru/htmlcss/22/user/347239).
 * Наставник: [Мурат Баркинхоев](https://htmlacademy.ru/profile/id186857).
 
-![Gllacy](https://github.com/antonkartashov/Learn-ReactJS-Part-II/blob/master/src/Gllacy.png)
+![Gllacy](https://github.com/antonkartashov/Learn-ReactJS-Part-II/blob/master/src/Gllacy-in-Sketch.png)
 
 ---
 
