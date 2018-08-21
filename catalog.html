@@ -11,23 +11,25 @@
                     <img src='img/vector/gllacy-logo.svg' width='154' height='64' alt='Магазин мороженного «Глейси»'>
                 </a>
                 <ul class='site-navigation'>
-                    <li>
+                    <li class='site-navigation-item-selected'>
                         <a href='#'>Каталог</a>
-                        <ul class='category-list'>
-                            <li class='category-item category-item-marked'><a href='new-items.html'>Новинки</a></li>
-                            <li class='category-item'><a href='catalog.html'>Сливочное</a></li>
-                            <li class='category-item'><a href='scrubbings.html'>Щербеты</a></li>
-                            <li class='category-item'><a href='fruity.html'>Фруктовый лед</a></li>
-                            <li class='category-item'><a href='melorin.html'>Мелорин</a></li>
-                        </ul>
+                        <div class='dropdown dropdown-catalog-list'>
+                            <ul class='category-list'>
+                                <li class='category-item category-item-bold'><a href='new-items.html'>Новинки</a></li>
+                                <li class='category-item category-item-selected'><a>Сливочное</a></li>
+                                <li class='category-item'><a href='scrubbings.html'>Щербеты</a></li>
+                                <li class='category-item'><a href='fruity.html'>Фруктовый лед</a></li>
+                                <li class='category-item'><a href='melorin.html'>Мелорин</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li><a href='delivery.html'>Доставка и&nbsp;оплата</a></li>
                     <li><a href='company.html'>О&nbsp;компании</a></li>
                 </ul>
                 <ul class='user-navigation'>
-                    <li><span class='button search-buttoin'>Поиск</span></li>
-                    <li><span class='button signin-button'>Вход</span></li>
-                    <li><span class='button cart-button'>2 товара</span></li>
+                    <li><button class='button button-search'>Поиск</button></li>
+                    <li><button class='button button-signin'>Вход</button></li>
+                    <li><button class='button button-cart'>2&nbsp;товара</button></li>
                 </ul>
                 <p class='main-header-contacts'>
                     С&nbsp;10 до&nbsp;20 ежедневно<br>
@@ -219,49 +221,65 @@
 
         <section class='cart'>
             <h2 class='visually-hidden'>Список товаров в&nbsp;корзине</h2>
-            <table class='cart-list'>
-                <tr>
-                    <td class='cart-item'>
-                        <h3 class='cart-item-title'>Пломбир с&nbsp;апельсиновым джемом</h3>
-                        <span class='cart-item-image'>
-                            <img src='img/ice-cream/1.jpg' width='33' height='33' alt='Пломбир с апельсиновым джемом'>
-                        </span>
-                        <span class='button'>Удалить</span>
-                    </td>
-                    <td class='cart-item'>1,5 кг × <span class='cart-item'>200&nbsp;руб.</span></td>
-                    <td class='cart-item'>300&nbsp;руб.</td>
-                </tr>
-                <tr>
-                    <td class='cart-item'>
-                        <h3 class='cart-item-title'>Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада</h3>
-                        <span class='cart-item-image'>
-                            <img src='img/ice-cream/3.jpg' width='33' height='33' alt='Клубничный пломбир с присыпкой из белого шоколада'>
-                        </span>
-                        <span class='button'>Удалить</span>
-                    </td>
-                    <td>1,5 кг × <span class='cart-item'>200&nbsp;руб.</span></td>
-                    <td>450&nbsp;руб.</td>
-                </tr>
-                <tr>
-                    <td class='cart-item' colspan='3'><b>Итого: 750&nbsp;руб.</b></td>
-                </tr>
-            </table>
-            <span class='button'>Оформить заказ</span>
+            <form action='.' method='get'>
+                <table class='cart-list'>
+                    <tr>
+                        <td class='cart-item'>
+                            <h3 class='cart-item-title'>Пломбир с&nbsp;апельсиновым джемом</h3>
+                            <span class='cart-item-image'>
+                                <img src='img/ice-cream/1.jpg' width='33' height='33' alt='Пломбир с апельсиновым джемом'>
+                            </span>
+                            <button class='cross-small'>Удалить</button>
+                        </td>
+                        <td class='cart-item'>1,5 кг × <span class='cart-item'>200&nbsp;руб.</span></td>
+                        <td class='cart-item'>300&nbsp;руб.</td>
+                    </tr>
+                    <tr>
+                        <td class='cart-item'>
+                            <h3 class='cart-item-title'>Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада</h3>
+                            <span class='cart-item-image'>
+                                <img src='img/ice-cream/3.jpg' width='33' height='33' alt='Клубничный пломбир с присыпкой из белого шоколада'>
+                            </span>
+                            <button class='cross-small'>Удалить</button>
+                        </td>
+                        <td>1,5 кг × <span class='cart-item'>200&nbsp;руб.</span></td>
+                        <td>450&nbsp;руб.</td>
+                    </tr>
+                    <tr>
+                        <td class='cart-item' colspan='3'>
+                            <b>Итого: 750&nbsp;руб.</b>
+                        </td>
+                    </tr>
+                </table>
+                <button class='button button-small' type='submit'>Оформить заказ</button>
+            </form>
         </section>
 
-        <section class='modal modal-search'>
+        <section class='dropdown dropdown-search'>
             <h2 class='visually-hidden'>Поиск</h2>
-            <!-- Форма -->
+            <form action='.' method='get'>
+                <label class='visually-hidden' for='dropdown-search-field'>Поиск по&nbsp;сайту</label>
+                <input type='search' class='search-field' id='dropdown-search-field' name='dropdown-search-field' placeholder='Что ищем?'>
+            </form>
         </section>
 
-        <section class='modal modal-signin'>
+        <section class='dropdown dropdown-signin'>
             <h2 class='visually-hidden'>Вход</h2>
-            <!-- Форма -->
-            <span class='button'>Войти</span>
-            <ul class='modal-signin-links'>
-                <li class='modal-signin-link'><a href='#'>Забыли пароль?</a></li>
-                <li class='modal-signin-link'><a href='#'>Новая регистрация</a></li>
-            </ul>
+            <form action='.' method='post'>
+                <p>
+                    <label class='visually-hidden' for='dropdown-signin-email'>Электронная почта</label>
+                    <input type='email' class='signin-email' id='dropdown-signin-email' name='dropdown-signin-email' placeholder='Электронная почта'>
+                </p>
+                <p>
+                    <label class='visually-hidden' for='dropdown-signin-password'>Пароль</label>
+                    <input type='password' class='signin-password' id='dropdown-signin-password' name='dropdown-signin-password' placeholder='Пароль'>
+                </p>
+                <ul class='signin-links'>
+                    <li><a href='#'>Забыли пароль?</a></li>
+                    <li><a href='#'>Новая регистрация</a></li>
+                </ul>
+                <button class='button button-small' type='submit'>Войти</button>
+            </form>
         </section>
     </body>
 </html>
