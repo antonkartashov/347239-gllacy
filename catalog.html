@@ -11,12 +11,12 @@
                     <img src='img/vector/gllacy-logo.svg' width='154' height='64' alt='Магазин мороженного «Глейси»'>
                 </a>
                 <ul class='site-navigation'>
-                    <li class='site-navigation-item-selected'>
+                    <li class='site-navigation-item-current'>
                         <a href='#'>Каталог</a>
                         <div class='dropdown dropdown-catalog-list'>
                             <ul class='category-list'>
-                                <li class='category-item category-item-bold'><a href='new-items.html'>Новинки</a></li>
-                                <li class='category-item category-item-selected'><a>Сливочное</a></li>
+                                <li class='category-item category-item-marked'><a href='new-items.html'>Новинки</a></li>
+                                <li class='category-item category-item-current'><a>Сливочное</a></li>
                                 <li class='category-item'><a href='scrubbings.html'>Щербеты</a></li>
                                 <li class='category-item'><a href='fruity.html'>Фруктовый лед</a></li>
                                 <li class='category-item'><a href='melorin.html'>Мелорин</a></li>
@@ -27,9 +27,9 @@
                     <li><a href='company.html'>О&nbsp;компании</a></li>
                 </ul>
                 <ul class='user-navigation'>
-                    <li><button class='button button-search'>Поиск</button></li>
-                    <li><button class='button button-signin'>Вход</button></li>
-                    <li><button class='button button-cart'>2&nbsp;товара</button></li>
+                    <li><button type='button' class='button button-search'>Поиск</button></li>
+                    <li><button type='button' class='button button-signin'>Вход</button></li>
+                    <li><button type='button' class='button button-cart'>2&nbsp;товара</button></li>
                 </ul>
                 <p class='main-header-contacts'>
                     С&nbsp;10 до&nbsp;20 ежедневно<br>
@@ -47,14 +47,9 @@
 
             <section class='filters'>
                 <h2 class='visually-hidden'>Фильтры</h2>
-                <!-- Форма
-                    <ul class='sorting-list'>
-                        <li class='sorting-item'><span class='button'>по популярности</span></li>
-                        <li class='sorting-item'><span class='button'>сначала недорогие</span></li>
-                        <li class='sorting-item'><span class='button'>сначала дорогие</span></li>
-                        <li class='sorting-item'><span class='button'>по жирности</span></li>
-                    </ul>
-                -->
+                <form action='.' method='post'>
+                    
+                </form>
                 <span class='button filters-button'>Применить</span>
             </section>
 
@@ -69,7 +64,7 @@
                             <b>310 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
-                        <span class='button visually-hidden'>Быстрый просмотр</span>
+                        <a class='button button-small' href='#'>Быстрый просмотр</a>
                     </li>
                     <li class='catalog-item'>
                         <h3 class='catalog-item-title'><a href='catalog/2'>Сливочно-кофейное с&nbsp;кусочками шоколада</a></h3>
@@ -79,7 +74,7 @@
                             <b>380 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
-                        <span class='button visually-hidden'>Быстрый просмотр</span>
+                        <a class='button button-small' href='#'>Быстрый просмотр</a>
                     </li>
                     <li class='catalog-item'>
                         <h3 class='catalog-item-title'><a href='catalog/3'>Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</a></h3>
@@ -89,7 +84,7 @@
                             <b>355 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
-                        <span class='button visually-hidden'>Быстрый просмотр</span>
+                        <a class='button button-small' href='#'>Быстрый просмотр</a>
                     </li>
                     <li class='catalog-item'>
                         <h3 class='catalog-item-title'><a href='catalog/4'>Сливочное крем-брюле с&nbsp;карамельной подливкой</a></h3>
@@ -99,7 +94,7 @@
                             <b>415 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
-                        <span class='button visually-hidden'>Быстрый просмотр</span>
+                        <a class='button button-small' href='#'>Быстрый просмотр</a>
                     </li>
 
                     <li class='catalog-item'>
@@ -110,7 +105,7 @@
                             <b>410 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
-                        <span class='button visually-hidden'>Быстрый просмотр</span>
+                        <a class='button button-small' href='#'>Быстрый просмотр</a>
                     </li>
                     <li class='catalog-item'>
                         <h3 class='catalog-item-title'><a href='catalog/2'>Сливочно-черничное с&nbsp;цельными ягодами черники</a></h3>
@@ -120,7 +115,7 @@
                             <b>375 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
-                        <span class='button visually-hidden'>Быстрый просмотр</span>
+                        <a class='button button-small' href='#'>Быстрый просмотр</a>
                     </li>
                     <li class='catalog-item'>
                         <h3 class='catalog-item-title'><a href='catalog/3'>Сливочно-лимонное с&nbsp;карамельной присыпкой</a></h3>
@@ -130,7 +125,7 @@
                             <b>320 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
-                        <span class='button visually-hidden'>Быстрый просмотр</span>
+                        <a class='button button-small' href='#'>Быстрый просмотр</a>
                     </li>
                     <li class='catalog-item'>
                         <h3 class='catalog-item-title'><a href='catalog/4'>Сливочное с&nbsp;шоколадной стружкой</a></h3>
@@ -140,7 +135,7 @@
                             <b>440 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
-                        <span class='button visually-hidden'>Быстрый просмотр</span>
+                        <a class='button button-small' href='#'>Быстрый просмотр</a>
                     </li>
 
                     <li class='catalog-item'>
@@ -151,7 +146,7 @@
                             <b>435 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
-                        <span class='button visually-hidden'>Быстрый просмотр</span>
+                        <a class='button button-small' href='#'>Быстрый просмотр</a>
                     </li>
                     <li class='catalog-item'>
                         <h3 class='catalog-item-title'><a href='catalog/2'>Сливочноe с&nbsp;ментоловым сиропом</a></h3>
@@ -161,7 +156,7 @@
                             <b>355 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
-                        <span class='button visually-hidden'>Быстрый просмотр</span>
+                        <a class='button button-small' href='#'>Быстрый просмотр</a>
                     </li>
                     <li class='catalog-item'>
                         <h3 class='catalog-item-title'><a href='catalog/3'>Сливочное с&nbsp;кусочками черного шоколада</a></h3>
@@ -171,7 +166,7 @@
                             <b>420 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
-                        <span class='button visually-hidden'>Быстрый просмотр</span>
+                        <a class='button button-small' href='#'>Быстрый просмотр</a>
                     </li>
                     <li class='catalog-item'>
                         <h3 class='catalog-item-title'><a href='catalog/4'>Сливочное с&nbsp;мятным сиропом</a></h3>
@@ -181,7 +176,7 @@
                             <b>415 ₽</b>
                             <span class='catalog-item-smallfont'>/кг</span>
                         </p>
-                        <span class='button visually-hidden'>Быстрый просмотр</span>
+                        <a class='button button-small' href='#'>Быстрый просмотр</a>
                     </li>
                 </ul>
                 <div class ='pagination'>
@@ -229,7 +224,7 @@
                             <span class='cart-item-image'>
                                 <img src='img/ice-cream/1.jpg' width='33' height='33' alt='Пломбир с апельсиновым джемом'>
                             </span>
-                            <button class='cross-small'>Удалить</button>
+                            <button type='button' class='cross-small'>Удалить</button>
                         </td>
                         <td class='cart-item'>1,5 кг × <span class='cart-item'>200&nbsp;руб.</span></td>
                         <td class='cart-item'>300&nbsp;руб.</td>
@@ -240,7 +235,7 @@
                             <span class='cart-item-image'>
                                 <img src='img/ice-cream/3.jpg' width='33' height='33' alt='Клубничный пломбир с присыпкой из белого шоколада'>
                             </span>
-                            <button class='cross-small'>Удалить</button>
+                            <button type='button' class='cross-small'>Удалить</button>
                         </td>
                         <td>1,5 кг × <span class='cart-item'>200&nbsp;руб.</span></td>
                         <td>450&nbsp;руб.</td>
