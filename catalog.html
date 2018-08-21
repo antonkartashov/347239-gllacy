@@ -47,10 +47,73 @@
 
             <section class='filters'>
                 <h2 class='visually-hidden'>Фильтры</h2>
-                <form action='.' method='post'>
-                    
+                <form action='https://echo.htmlacademy.ru' method='post'>
+
+                    <fieldset class='filters-sorting'>
+                        <legend>Сортировка:</legend>
+                        <select class='sorting-list' name='filters-sorting-list'>
+                            <option value='popular'>по популярности</option>
+                            <option value='cheap'>сначала недорогие</option>
+                            <option value='expensive'>сначала дорогие</option>
+                            <option value='fatness'>по жирности</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset class='filters-price'>
+                        <legend>Цена: <span class='filters-price-min-legend'>100 руб.</span> — <span class='filters-price-max-legend'>500 руб.</span></legend>
+                        <input type='range' class='filters-price-min' name='filters-price-min' min='0' max='750' value='100'>
+                        <input type='range' class='filters-price-max' name='filters-price-max' min='0' max='750' value='500'>
+                    </fieldset>
+
+                    <fieldset class='filters-fatness'>
+                        <legend>Жирность:</legend>
+                        <ul>
+                            <li>
+                                <input type='radio' name='filters-fatness-group' class='filters-radio' id='fatness-0' value='0'>
+                                <label for='fatness-0'>0%</label>
+                            </li>
+                            <li>
+                                <input type='radio' name='filters-fatness-group' class='filters-radio' id='fatness-10' value='1' checked>
+                                <label for='fatness-10'>до 10%</label>
+                            </li>
+                            <li>
+                                <input type='radio' name='filters-fatness-group' class='filters-radio' id='fatness-30' value='2'>
+                                <label for='fatness-30'>до 30%</label>
+                            <li>
+                                <input type='radio' name='filters-fatness-group' class='filters-radio' id='fatness-max' value='3'>
+                                <label for='fatness-max'>выше 30%</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class='filters-filler'>
+                        <legend>Наполнители:</legend>
+                        <ul>
+                            <li>
+                                <input type='checkbox' name='filters-fillers-choco' class='filters-checkbox' id='filters-fillers-choco' checked>
+                                <label for='filters-fillers-choco'>шоколадные</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' name='filters-fillers-sugar' class='filters-checkbox' id='filters-fillers-sugar' checked>
+                                <label for='filters-fillers-sugar'>сахарные присыпки</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' name='filters-fillers-fruit' class='filters-checkbox' id='filters-fillers-fruit'>
+                                <label for='filters-fillers-fruit'>фрукты</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' name='filters-fillers-syrup' class='filters-checkbox' id='filters-fillers-syrup'>
+                                <label for='filters-fillers-syrup'>сиропы</label>
+                            </li>
+                            <li>
+                                <input type='checkbox' name='filters-fillers-jammy' class='filters-checkbox' id='filters-fillers-jammy'>
+                                <label for='filters-fillers-jammy'>джемы</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <button type='submit' class='button button-filters'>Применить</button>
                 </form>
-                <span class='button filters-button'>Применить</span>
             </section>
 
             <section class='catalog'>
